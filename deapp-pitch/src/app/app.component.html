@@ -1,0 +1,27 @@
+<!-- app.component.html -->
+<div class="scroll-container">
+  <section class="page page1" #page>
+    <h1>Page 1</h1>
+    <p>This is the content of page 1.</p>
+  </section>
+  <section class="page page2" #page>
+    <h1>Page 2</h1>
+    <p>This is the content of page 2.</p>
+  </section>
+  <section class="page page3" #page>
+    <h1>Page 3</h1>
+    <p>This is the content of page 3.</p>
+  </section>
+  <section class="page page4" #page>
+    <h1>Page 4</h1>
+    <p>This is the content of page 4.</p>
+  </section>
+  <section class="page page5" #page>
+    <h1>Page 5</h1>
+    <p>This is the content of page 5.</p>
+  </section>
+</div>
+<div class="navigation-buttons">
+  <button (click)="navigateTo('prev')">Previous</button>
+  <button (click)="navigateTo('next')">Next</button>
+</div>
