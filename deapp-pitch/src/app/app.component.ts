@@ -9,12 +9,14 @@ export class AppComponent {
   @ViewChildren('page') pages!: QueryList<ElementRef>;
   currentIndex = 0;
 
-  navigateTo(direction: 'next' | 'prev'): void {
+  navigateTo(direction: 'next' | 'prev' | 'start'): void {
     // Calculate the new index
     if (direction === 'next' && this.currentIndex < this.pages.length - 1) {
       this.currentIndex++;
     } else if (direction === 'prev' && this.currentIndex > 0) {
       this.currentIndex--;
+    }else if (direction === 'start' && this.currentIndex > 0) {
+      this.currentIndex=0;
     }
 
     // Scroll to the new page
