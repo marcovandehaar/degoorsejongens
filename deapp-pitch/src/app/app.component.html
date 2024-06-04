@@ -1,5 +1,5 @@
 <!-- app.component.html -->
-<div class="scroll-container">
+<div class="scroll-container" #scrollContainer>
   <section class="page page1" #page>
 
     <section class="text-gray-600 body-font">
@@ -233,11 +233,11 @@
 </div>
 
 <div class="flex justify-center mb-10 nav-container ">
-  <div
+  <div *ngIf="(!isAtLastPage && !isAtBottom)"
     class="nav-button blob"(click)="navigateTo('next')">
     <i class="pi pi-angle-double-down" ></i>
   </div>
-  <div
+  <div *ngIf="false"
     class="nav-button blob" (click)="navigateTo('prev')">
     <i class="pi pi-angle-double-up" ></i>
   </div>
