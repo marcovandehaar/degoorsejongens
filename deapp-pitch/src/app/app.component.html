@@ -23,7 +23,7 @@
                     <img src="assets/images/beer-cap.svg" alt="Beer cap" class="inline-block mr-2 w-10 h-10" /></a>
                   Check
                   <a href="https://www.berghoevebrouwerij.nl/de-brouwerij/berghoeve-brouwers-challenge/"
-                    class="font-bold text-red-800" target="_blank">hier</a> voor meer info over de wedstrijd!
+                    class="font-bold text-indigo-500 underline" target="_blank">hier</a> voor meer info over de wedstrijd!
                 </p>
                 <div class="flex items-center flex-wrap ">
 
@@ -84,9 +84,9 @@
               </svg>
             </span><span class="font-bold text-red-800">Verkopen en winnen!</span>
             <p>Het team welke het meeste verkoopt, </p>
-            <p>En het beste scoort op Untappd <img src="assets/images/UNTAPPDLOGO-1.webp"
-                class="inline-block w-6 h-6" /> en bij de vakjury, </p>
-            <p>wint de wedstrijd!</p>
+            <p>het beste scoort op Untappd en bij de vakjury,<img src="assets/images/UNTAPPDLOGO-1.webp"
+                class="inline-block w-6 h-6" />
+                <p>wint de wedstrijd!</p>
           </a>
         </nav>
         <div class="h-full border-2 mt-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
@@ -129,7 +129,7 @@
             </span><span class="font-bold text-red-800">Het goede doel!</span>
             <p>Deel van de opbrengst gaat naar een goed doel, hoe vet is dat!? </p>
             <p>Wij strijden voor <a href="https://www.haarwensen.nl/" target="_blank"
-                class="font-bold text-red-800">Stichting Haarwensen</a>.</p>
+                class="font-bold text-indigo-500 underline">Stichting Haarwensen</a>.</p>
             <p>Zij maken pruiken voor kinderen die door ziekte hun haar verliezen.</p>
             <p>En dat is natuurlijk een prachtig doel!</p>
           </a>
@@ -179,14 +179,11 @@
                   class="w-3 h-3" viewBox="0 0 24 24">
                   <path d="M20 6L9 17l-5-5"></path>
                 </svg>
-              </span>Wil jij nou als eerste op de hoogte zijn
+              </span>Wil jij nou als <span class="font-bold text-red-800">eerste </span>op de hoogte zijn
             </p>
-            <p><span class="font-bold text-red-800">Wanneer ons bier klaar is en waar je het kunt krijgen?</span></p>
-            <p>Meld je dan hier aan voor Goorse Jongens nieuws!</p>
-            <button class="w-full mt-4 bg-indigo-500 text-white font-bold py-2 px-4 rounded"
-              onclick="window.open('https://www.cognitoforms.com/BrouwerijDeAap/GoorseJongensNieuws', '_blank')">
-              Meld je aan!
-            </button>
+            <p><span class="font-bold text-red-800">Wanneer</span> ons bier klaar is en waar je het kunt krijgen?</p>
+            <p><span class="font-bold text-red-800">Scroll</span> dan nog 1 keer verder en meld je aan!</p>
+           
           </a>
         </nav>
         <div class="h-full border-2 mt-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
@@ -198,7 +195,7 @@
     </section>
   </section>
 
-  <section class="page page5" #page>
+  <section class="page page5" #page *ngIf="false">
     <section class="text-gray-600 body-font">
       <div class="container px-5 py-24 mx-auto">
         <div class="text-center mb-6">
@@ -260,7 +257,7 @@
             
           </a>
         </nav>
-        <div class="h-full border-2 mt-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+        <div class="h-full mt-2  rounded-lg overflow-hidden">
           <img class="lg:h-32 md:h-40  w-full object-cover object-center" src="assets/images/IMG_7973.jpg" alt="blog">
         </div>
 
@@ -271,7 +268,7 @@
 
  
       
-        <section class="page page9" #page>
+        <section class="page page9" #page >
           <section class="text-gray-600 body-font">
             <div class="container px-5 py-24 mx-auto">
               <div class="text-center mb-6">
@@ -284,7 +281,11 @@
                 Help ons deze fantastishce wedstrijd te winnen!</h2>
               <div class="flex flex-wrap -m-4">
                 <div class="p-4 w-full">
-                  <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                  <div class="h-full rounded-lg overflow-hidden">
+                    <button class="w-full mt-4 bg-indigo-500 text-white font-bold py-2 px-4 rounded"
+                    onclick="window.open('https://www.cognitoforms.com/BrouwerijDeAap/GoorseJongensNieuws', '_blank')">
+                    Meld je aan!
+                  </button>
                     <img class="lg:h-80 md:h-48 w-full object-cover object-center" src="assets/images/goorsejongenslogo.png"
                       alt="blog">
                     <div class="p-1">
