@@ -92,12 +92,6 @@
         <div class="h-full border-2 mt-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
           <img class="lg:h-32 md:h-40  w-full object-cover object-center" src="assets/images/IMG_7982.jpg" alt="blog">
         </div>
-
-        <div class="flex justify-center">
-          <div class="blob blue opacity-50 cursor-pointer" (click)="navigateTo('next')">
-            <i class="fas fa-chevron-down text-black"></i>
-          </div>
-        </div>
       </div>
     </section>
   </section>
@@ -141,12 +135,6 @@
         </nav>
         <div class="h-full border-2 mt-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
           <img class="lg:h-32 md:h-40  w-full object-cover object-center" src="assets/images/IMG_7968.jpg" alt="blog">
-        </div>
-
-        <div class="flex justify-center">
-          <div class="blob blue opacity-50 cursor-pointer" (click)="navigateTo('next')">
-            <i class="fas fa-chevron-down text-black"></i>
-          </div>
         </div>
       </div>
     </section>
@@ -197,12 +185,6 @@
         <div class="h-full border-2 mt-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
           <img class="lg:h-32 md:h-40  w-full object-cover object-center" src="assets/images/IMG_7967.jpg" alt="blog">
         </div>
-
-        <div class="flex justify-center">
-          <div class="blob blue opacity-50 cursor-pointer" (click)="navigateTo('next')">
-            <i class="fas fa-chevron-down text-black"></i>
-          </div>
-        </div>
       </div>
     </section>
   </section>
@@ -250,13 +232,13 @@
   </section>
 </div>
 
-<div class="flex justify-end mb-2 ml-2">
+<div class="flex justify-center mb-10 nav-container ">
   <div
-    class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-yellow-100 text-yellow-500 mb-4 cursor-pointer">
-    <i class="pi pi-angle-double-down" (click)="navigateTo('next')"></i>
+    class="nav-button blob"(click)="navigateTo('next')">
+    <i class="pi pi-angle-double-down" ></i>
   </div>
   <div
-    class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-yellow-100 text-yellow-500 mb-4 cursor-pointer">
-    <i class="pi pi-angle-double-up" (click)="navigateTo('prev')"></i>
+    class="nav-button blob" (click)="navigateTo('prev')">
+    <i class="pi pi-angle-double-up" ></i>
   </div>
 </div>

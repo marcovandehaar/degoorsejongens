@@ -32,13 +32,11 @@
   }
 
   .blob {
-    background: rgb(99 102 241);
-    box-shadow: 0 0 0 0 rgb(99 102 241);
-    animation: pulse-blue 2s infinite;
+    background: #fef3c7;
+    box-shadow: 0 0 0 0 #fadc62;
+    animation: pulse-yellow 2s infinite;
     border-radius: 50%;
     margin: 10px;
-    height: 20px;
-    width: 20px;
     transform: scale(1);
   }
   
@@ -60,21 +58,42 @@
   }
 
   
-  @keyframes pulse-blue {
+
+  @keyframes pulse-yellow {
     0% {
       transform: scale(0.95);
-      box-shadow: 0 0 0 0 rgba(52, 172, 224, 0.7);
+      box-shadow: 0 0 0 0 #fadc62;
     }
     
     70% {
       transform: scale(1);
-      box-shadow: 0 0 0 10px rgba(52, 172, 224, 0);
+      box-shadow: 0 0 0 10px rgba(255, 177, 66, 0);
     }
     
     100% {
       transform: scale(0.95);
-      box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
+      box-shadow: 0 0 0 0 rgba(255, 177, 66, 0);
     }
+  }
+  
+  .nav-container{
+    position: fixed;
+  bottom: 0px;
+  left: 45%;
+  }
+
+  .nav-button {
+
+    width: 2.5rem; /* Equivalent to 'w-10' in Tailwind CSS */
+    height: 2.5rem; /* Equivalent to 'h-10' in Tailwind CSS */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px; /* Equivalent to 'rounded-full' in Tailwind CSS */
+    
+    color: #d97706; /* Equivalent to 'text-yellow-500' in Tailwind CSS */
+    margin-bottom: 1rem; /* Equivalent to 'mb-4' in Tailwind CSS */
+    cursor: pointer;
   }
   
   
