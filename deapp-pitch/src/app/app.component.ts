@@ -39,7 +39,7 @@ export class AppComponent {
   onScrollContainerScroll() {
     const scrollPosition = this.scrollContainer.nativeElement.scrollTop + this.scrollContainer.nativeElement.clientHeight;
     const divHeight = this.scrollContainer.nativeElement.scrollHeight;
-    //console.log(scrollPosition, divHeight);
-    this.isAtBottom = (scrollPosition >= divHeight);
+    console.log(scrollPosition, divHeight);
+    this.isAtBottom = (scrollPosition >= divHeight * 0.95);
   }
 }
