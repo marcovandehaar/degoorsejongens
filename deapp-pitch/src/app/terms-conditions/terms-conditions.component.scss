@@ -4,7 +4,7 @@
 .scroll-container {
     display: flex;
     flex-direction: column; /* Stack sections vertically */
-    height: 100vh; /* Full viewport height */
+    
     overflow-y: auto; /* Enable vertical scrolling */
     justify-content: center; /* Center the content vertically */
     align-items: center;
