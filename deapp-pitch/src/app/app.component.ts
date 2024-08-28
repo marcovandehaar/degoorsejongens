@@ -1,4 +1,5 @@
 import { Component, ViewChildren, QueryList, ElementRef, HostListener,ViewChild, AfterViewInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,16 @@ export class AppComponent {
     this.scrollContainer.nativeElement.addEventListener('scroll', () => this.onScrollContainerScroll());
   }
   
+  constructor(private route: ActivatedRoute, private router: Router) { }
+
+  ngOnInit(): void {
+    this.route.queryParams.subscribe(params => {
+      const voorwaarden = params['voorwaarden'];
+      if (voorwaarden) {
+        this.router.navigate(['/voorwaarden']);
+      }
+    });
+  }
 
   navigateTo(direction: 'next' | 'prev' | 'start'): void {
     // Calculate the new index
