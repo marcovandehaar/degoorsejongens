@@ -1,5 +1,4 @@
 import { Component, ViewChildren, QueryList, ElementRef, HostListener,ViewChild, AfterViewInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -13,30 +12,8 @@ export class PitchComponent {
   isAtBottom = false;
   isAtLastPage = false;
 
-  constructor(private route: ActivatedRoute, private router: Router) {}
-
-  ngOnInit(): void {
-    this.route.params.subscribe(params => {
-      const param = params['param'];
-      if (param) {
-        this.handleDynamicRouting(param);
-      }
-    });
-  }
-
   ngAfterViewInit() {
     this.scrollContainer.nativeElement.addEventListener('scroll', () => this.onScrollContainerScroll());
-  }
-
-  handleDynamicRouting(param: string): void {
-    // Add your logic here to determine the target route based on the param
-    if (param === 'voorwaarden') {
-      console.log('Navigating to voorwaarden');
-      this.router.navigate(['/voorwaarden']);
-    } else {
-      // Default or fallback route
-      this.router.navigate(['/pitch']);
-    }
   }
   
 
